@@ -1,4 +1,5 @@
 # Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# Credit: Thanks Zeelog for tree and kami for guidance
 
 ## Spec Sheet
 
