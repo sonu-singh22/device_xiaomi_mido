@@ -388,6 +388,12 @@ PRODUCT_PACKAGES += \
     init.parts.rc \
     init.target.rc \
     ueventd.qcom.rc
+    
+# Remove unwanted packages
+ifeq ($(TARGET_DEBLOAT),true)
+PRODUCT_PACKAGES += \
+    RemovePackages    
+endif
 
 # RIL
 PRODUCT_PACKAGES += \
