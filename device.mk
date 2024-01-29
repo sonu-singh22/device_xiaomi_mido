@@ -502,10 +502,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
-
-# Maintainer
-PRODUCT_SYSTEM_PROPERTIES += \
-       ro.spos.maintainer=Sonu_Singh
        
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
