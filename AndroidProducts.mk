@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_mido.mk
+    $(LOCAL_DIR)/lineage_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_mido-user \
-    droidx_mido-userdebug \
-    droidx_mido-eng
+    lineage_mido-user \
+    lineage_mido-userdebug \
+    lineage_mido-eng
