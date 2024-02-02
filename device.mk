@@ -24,8 +24,11 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Call the ViperFX Config
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+# GrapheneOS Camera
+ifeq ($(TARGET_BUILD_GRAPHENEOS_CAMERA),true)
 PRODUCT_PACKAGES += \
     GrapheneCamera
+endif
 
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_SUFFIX := _64
