@@ -402,6 +402,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.zram \
     init.backlight.rc \
     init.backlight.sh \
     init.class_main.sh \
