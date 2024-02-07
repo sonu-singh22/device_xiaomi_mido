@@ -24,6 +24,10 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common SuperiorExtendedOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# SuperiorExt Official
+SUPERIOR_OFFICIAL := true
+
+# SuperiorExt Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SHIPS_PREBUILT_GCAM := false
 TARGET_INCLUDE_MATLOG := true
