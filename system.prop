@@ -164,6 +164,9 @@ persist.hwc.enable_vds=1
 # Zygote
 zygote.critical_window.minute=10
 
+# Hw button
+qemu.hw.mainkeys=0
+
 # Logs
 persist.log.tag.AnalyticsService=S
 persist.log.tag.KernelCpuUidActiveTimeReader=S
