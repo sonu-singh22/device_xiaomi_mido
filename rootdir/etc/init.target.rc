@@ -164,6 +164,8 @@ on charger
     start vendor.hvdcp_opti
     start vendor.power_off_alarm
     restart thermal-engine
+    chown system system /sys/class/leds/green/brightness
+    write /sys/class/leds/green/brightness 255
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
