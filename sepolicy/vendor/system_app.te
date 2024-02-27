@@ -22,7 +22,8 @@ allow system_app {
 }:dir search;
 
 # zram
-r_dir_file(system_app sysfs_zram)
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
 
 # Allow KProfiles to be adjusted by a system app
 allow system_app sysfs_kprofiles:file rw_file_perms;
