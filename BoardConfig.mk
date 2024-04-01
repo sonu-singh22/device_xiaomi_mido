@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -115,7 +115,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE   := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
