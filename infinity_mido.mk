@@ -21,12 +21,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity-X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+INFINITY_MAINTAINER := sonu_singh
+TARGET_BUILD_VIMUSIC := true
+USE_MOTO_CALCULATOR := false
+TARGET_SUPPORTS_BLUR := false
+
+# Debloat
+TARGET_DEBLOAT := true
+
+# Gapps
+WITH_GAPPS := false
+TARGET_BUILD_GOOGLE_TELEPHONY := false
+
+# Build GrapheneOS Cam
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := lineage_mido
+PRODUCT_NAME := infinity_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
