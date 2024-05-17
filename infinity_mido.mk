@@ -21,25 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common SuperiorExtendedOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Infinity-X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# SuperiorExt Official
-SUPERIOR_OFFICIAL := true
-
-# SuperiorExt Flags
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SHIPS_PREBUILT_GCAM := false
-TARGET_INCLUDE_MATLOG := false
-USE_MOTO_CALCULATOR := true
-TARGET_SUPPORTS_BLUR := true
-SUPERIOR_UDFPS_ANIMATIONS := false
-USE_MOTO_CLOCK := false
-SYSTEM_OPTIMIZE_JAVA := true
-SYSTEMUI_OPTIMIZE_JAVA := true
-USE_QUICKPIC := false
-USE_DUCKDUCKGO := false
-USE_ViaBrowser := true
+INFINITY_MAINTAINER := sonu_singh
 TARGET_BUILD_VIMUSIC := true
 
 # Debloat
@@ -53,7 +41,7 @@ TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := superior_mido
+PRODUCT_NAME := infinity_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
