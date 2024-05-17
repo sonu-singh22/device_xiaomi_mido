@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_mido.mk
+    $(LOCAL_DIR)/infinity_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_mido-user \
-    superior_mido-userdebug \
-    superior_mido-eng
+    infinity_mido-user \
+    infinity_mido-userdebug \
+    infinity_mido-eng
