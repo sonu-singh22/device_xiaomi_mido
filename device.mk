@@ -199,10 +199,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
