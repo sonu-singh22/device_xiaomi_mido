@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/infinity_mido.mk
-
-COMMON_LUNCH_CHOICES := \
-    infinity_mido-user \
-    infinity_mido-userdebug \
-    infinity_mido-eng
