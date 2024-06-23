@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
     GrapheneCamera
 endif
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_SUFFIX := _64
 
