@@ -8,7 +8,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     AndroidAutoStub \
     CalculatorGoogle  \
     GoogleFeedback \
-    GooglePartnerSetup
+    GooglePartnerSetup \
+    NfcNci
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
