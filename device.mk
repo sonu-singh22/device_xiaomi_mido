@@ -165,6 +165,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.6 \
     camera.device@1.0-impl \
     camera.device@3.5-impl \
@@ -287,6 +288,9 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     ims-ext-common \
     ims_ext_common.xml
+
+PRODUCT_PACKAGES += \
+    libion.vendor
 
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
@@ -433,6 +437,11 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+PRODUCT_PACKAGES += \
+    libnetutils.vendor \
+    libsqlite.vendor \
+    libssl.vendor
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -443,6 +452,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge:64
+    
+PRODUCT_PACKAGES += \
+    libpower.vendor
     
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
